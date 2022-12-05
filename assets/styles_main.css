@@ -1,0 +1,16 @@
+* {
+    /*height: 100%;*/
+
+
+}
+
+html {
+    background-color: black;
+    background-image:
+            radial-gradient(36.56% 53.8% at 24.62% 51.76%, rgba(39, 212, 10, 0.5) 6.56%, rgba(39, 212, 10, 0) 94.08%),
+    radial-gradient(35.49% 47.56% at 69.31% 46.04%, rgba(209, 212, 15, 0.504) 21.15%, rgba(209, 212, 15, 0) 100%);
+    /*none;*/
+    background-repeat: no-repeat;
+    height: 100%;
+
+}

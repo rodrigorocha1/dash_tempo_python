@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+* {
+
+}
+
 html {
     background-color: black;
     background-image: radial-gradient(42.57% 62.43% at 18.61% 47.94%, rgba(39, 212, 10, 0.8) 6.56%, rgba(39, 212, 10, 0) 94.08%),
@@ -12,9 +16,10 @@ html {
 
 .class-barra-lateral {
     border-radius: 20px;
-    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     backdrop-filter: blur(90px);
     border: 1px solid #FFFFFF;
+    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
     margin-left: 23px;
     margin-top: 24px;
     height: 90vh;
@@ -94,4 +99,13 @@ html {
 button:hover {
     background-color: yellowgreen;
     color: white;
+}
+
+.class-coluna-2 {
+    border-radius: 20px;
+    backdrop-filter: blur(90px);
+    border: 1px solid #FFFFFF;
+    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) ;
+    margin: 24px 24px;
+    height: 90vh;
 }

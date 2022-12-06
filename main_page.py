@@ -29,10 +29,9 @@ app.layout = html.Div([
 
                 ]),
 
-            ], className='class-barra-lateral', md=2),
-            dbc.Col(html.Div("One of three columns", className='class-linha-grande',
-                             style={'background-color': 'blue'})
-                    , md=8),
+            ], className='class-barra-lateral', width=2),
+            dbc.Col("One of three columns"
+                    , className='class-coluna-2', ),
         ]
     ),
 ])

@@ -1,16 +1,91 @@
-* {
-    /*height: 100%;*/
-
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 html {
     background-color: black;
-    background-image:
-            radial-gradient(36.56% 53.8% at 24.62% 51.76%, rgba(39, 212, 10, 0.5) 6.56%, rgba(39, 212, 10, 0) 94.08%),
-            radial-gradient(35.49% 47.56% at 69.31% 46.04%, rgba(209, 212, 15, 0.504) 21.15%, rgba(209, 212, 15, 0) 100%);
+    background-image: radial-gradient(42.57% 62.43% at 18.61% 47.94%, rgba(39, 212, 10, 0.8) 6.56%, rgba(39, 212, 10, 0) 94.08%),
+    radial-gradient(35.49% 47.56% at 69.31% 46.04%, rgba(209, 212, 15, 0.504) 21.15%, rgba(209, 212, 15, 0) 100%);
     /*none;*/
     background-repeat: no-repeat;
     height: 100%;
 
+}
+
+.class-barra-lateral {
+    border-radius: 20px;
+    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    backdrop-filter: blur(90px);
+    border: 1px solid #FFFFFF;
+    margin-left: 23px;
+    margin-top: 24px;
+    height: 90vh;
+}
+
+.class-linha-grande {
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+.class-img-barra-lateral {
+    width: 34px;
+    height: 42px;
+    margin-left: 25px;
+    margin-top: 45px;
+
+}
+
+#id_txt_tempo_agora {
+    margin-left: 70px;
+    margin-top: -40px;
+    width: 145px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2AA312;
+}
+
+.class-img-dash {
+    width: 32px;
+    height: 30px;
+    margin-top: 89px
+}
+
+.class-img-map {
+    width: 32px;
+    height: 30px;
+    margin-top: 5px;
+
+}
+
+.class-img-loc {
+    width: 32px;
+    height: 30px;
+    margin-top: 5px;
+
+}
+
+.class-img-cal {
+    width: 32px;
+    height: 30px;
+    margin-top: 5px;
+
+}
+
+.class-botao-layout {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 13px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
 }

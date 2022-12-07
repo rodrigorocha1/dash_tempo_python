@@ -3,6 +3,5 @@ from dash.dependencies import Input, Output, State
 from app import *
 import dash_bootstrap_components as dbc
 
-mapa = dbc.Col(html.Div("mapa", className='class-linha-grande',
-                        style={'background-color': 'blue'})
-               )
+
+calendario = dbc.Col(html.Div("Calendario", className='class-linha-grande',style={'background-color': 'blue'}), md=8)

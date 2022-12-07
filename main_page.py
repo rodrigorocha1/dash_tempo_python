@@ -4,6 +4,9 @@ from app import *
 import dash_bootstrap_components as dbc
 from layouts.barra_lateral import barra_lateral
 from layouts.dashboard import dashboard
+from layouts.mapa import mapa
+from layouts.localizacao import localizacao
+from layouts.calendario import calendario
 
 content = html.Div(id="page_content")
 
@@ -26,11 +29,17 @@ app.layout = html.Div([
 ])
 
 
-@app.callback(Output("page-content", "children"),
-              [Input("url", "pathname")])
+@app.callback(Output('page-content', 'children'),
+              [Input('url', 'pathname')])
 def carregar_pagina(pathname):
-    if pathname == "/" or pathname == "/layouts/dashboard":
+    if pathname == '/' or pathname == '/layouts/dashboard':
         return dashboard
+    if pathname == '/' or pathname == '/layouts/mapa':
+        return mapa
+    if pathname == '/' or pathname == '/layouts/localizacao':
+        return localizacao
+    if pathname == '/' or pathname == '/layouts/calendario':
+        return calendario
 
 
 if __name__ == "__main__":

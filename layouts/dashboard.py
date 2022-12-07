@@ -3,7 +3,6 @@ from dash.dependencies import Input, Output, State
 from app import *
 import dash_bootstrap_components as dbc
 
+dashboard = dbc.Card([
 
-dashboard = dbc.Col(html.Div("dashboard", className='class-linha-grande',
-                             style={'background-color': 'blue'})
-                    )
+], className='class-card-city')

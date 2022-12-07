@@ -95,6 +95,13 @@ html {
     cursor: pointer;
 }
 
+.class-botao-layout:hover {
+    background-color: yellowgreen;
+    transition: 0.5s;
+    opacity: 0.7;
+
+}
+
 
 
 .class-coluna-2 {

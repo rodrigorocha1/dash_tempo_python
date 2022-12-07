@@ -14,11 +14,11 @@ barra_lateral = dbc.Row([
     dbc.Col(
         dbc.Nav(
             [
-                dbc.NavLink('Dashboard', href='/layouts/dashboard', active='exact'),
+                dbc.NavLink('Dashboard', href='/layouts/dashboard'),
                 dbc.NavLink('Mapa', href='/layouts/mapa', active='exact'),
-                dbc.NavLink('Localização', href='/layouts/localizacao', active='xact'),
-                dbc.NavLink('Calendário', href='/layouts/calendario', active='exact')
-            ], id='nav_buttons', vertical='md'),
+                dbc.NavLink('Localização', href='/layouts/localizacao'),
+                dbc.NavLink('Calendário', href='/layouts/calendario')
+            ], id='nav_buttons', className='class-botao-layout', vertical=True),
         width=8, style={'margin-top': '80px'}, ),
 
 ])

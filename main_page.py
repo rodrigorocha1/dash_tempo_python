@@ -17,7 +17,7 @@ app.layout = html.Div(
 
         dbc.Row(
             [
-                dbc.Col(html.Div("One of four columns"), md=2, sm=6, style={'background': 'red'}),
+                dbc.Col(html.Div("One of four columns"), md=2, sm=6, style={'background': 'red', 'height': '100vh'}),
                 dbc.Col(html.Div("One of four columns"), md=10, sm=6, style={'background': 'blue'}),
 
             ]

@@ -10,20 +10,57 @@ from layouts.calendario import calendario
 
 content = html.Div(id="page_content")
 
-
-
-app.layout = html.Div(
-    [
-
-        dbc.Row(
+app.layout = html.Div(children=[
+    dbc.Row([
+        dbc.Col(
             [
-                dbc.Col(html.Div("One of four columns"), md=2, sm=6, style={'background': 'red', 'height': '100vh'}),
-                dbc.Col(html.Div("One of four columns"), md=10, sm=6, style={'background': 'blue'}),
-
-            ]
+                dbc.Card(
+                    dbc.CardBody(
+                        [
+                            html.H4("Title", className="card-title"),
+                            html.H6("Card subtitle", className="card-subtitle"),
+                            html.P(
+                                "Some quick example text to build on the card title and make "
+                                "up the bulk of the card's content.",
+                                className="card-text",
+                            ),
+                            dbc.CardLink("Card link", href="#"),
+                            dbc.CardLink("External link", href="https://google.com"),
+                        ]
+                    ),
+                )
+            ],
+            style={'height': '90vh'}, className='class-barra-lateral',
+            sm=2,
         ),
-    ]
+        dbc.Col(
+            [
+                dbc.Row(
+                    [
+                        dbc.Col('Card 1 Linha 1', className='class-card-city', ),
+                        dbc.Col('Card 2 Linha 1', className='class-card-sol', ),
+                        dbc.Col('Card 3 Linha 1', className='class-intervalo-tempo'),
+                    ]
+                ),
+                dbc.Row(
+                    [
+                        dbc.Col('Card 1 Linha 1', id='id_direcao_vento', ),
+                        dbc.Col('Card 2 Linha 1', id='coluna_mapa', ),
+
+                    ],
+                    style={'margin-top': '24px'}
+
+                ),
+            ],
+
+            sm=10,
+        ),
+
+    ])
+], style={'padding': '15px'}
+
 )
+
 # @app.callback(Output('page-content', 'children'),
 #               [Input('url', 'pathname')])
 # def carregar_pagina(pathname):

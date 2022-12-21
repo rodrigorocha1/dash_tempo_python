@@ -21,23 +21,21 @@ app.layout = dbc.Container(children=[
                 )
             ], className='class-barra-lateral')
 
-        ],  # sm=4,
-            lg=3),
+        ],  md=2),
         dbc.Col([
             dbc.Row([
-                dbc.Col(html.Div('blue', style={'background': 'blue'}), sm=4),
-                dbc.Col(html.Div('red', style={'background': 'red'}), sm=4),
-                dbc.Col(html.Div('yellow', style={'background': 'yellow'}), sm=4),
+                dbc.Col(html.Div('blue', style={'background': 'blue'}), md=4),
+                dbc.Col(html.Div('red', style={'background': 'red'}), md=4),
+                dbc.Col(html.Div('yellow', style={'background': 'yellow'}), md=4),
 
             ]),
             dbc.Row([
-                dbc.Col(html.Div('pink', style={'background': 'pink'}), sm=3),
-                dbc.Col(html.Div('green', style={'background': 'green'}), sm=9),
+                dbc.Col(html.Div('pink', style={'background': 'pink'}), md=3),
+                dbc.Col(html.Div('green', style={'background': 'green'}), md=9),
 
             ]),
 
-        ]  # , sm=12
-            , lg=9)
+        ],  md=10)
 
     ])
 

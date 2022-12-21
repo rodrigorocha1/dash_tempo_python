@@ -10,56 +10,38 @@ from layouts.calendario import calendario
 
 content = html.Div(id="page_content")
 
-app.layout = html.Div(children=[
+app.layout = dbc.Container(children=[
     dbc.Row([
-        dbc.Col(
-            [
+        dbc.Col([
+            html.Div([
                 dbc.Card(
                     dbc.CardBody(
-                        [
-                            html.H4("Title", className="card-title"),
-                            html.H6("Card subtitle", className="card-subtitle"),
-                            html.P(
-                                "Some quick example text to build on the card title and make "
-                                "up the bulk of the card's content.",
-                                className="card-text",
-                            ),
-                            dbc.CardLink("Card link", href="#"),
-                            dbc.CardLink("External link", href="https://google.com"),
-                        ]
+                        barra_lateral
                     ),
                 )
-            ],
-            style={'height': '90vh'}, className='class-barra-lateral',
-            sm=2,
-        ),
-        dbc.Col(
-            [
-                dbc.Row(
-                    [
-                        dbc.Col('Card 1 Linha 1', className='class-card-city', ),
-                        dbc.Col('Card 2 Linha 1', className='class-card-sol', ),
-                        dbc.Col('Card 3 Linha 1', className='class-intervalo-tempo'),
-                    ]
-                ),
-                dbc.Row(
-                    [
-                        dbc.Col('Card 1 Linha 1', id='id_direcao_vento', ),
-                        dbc.Col('Card 2 Linha 1', id='coluna_mapa', ),
+            ], className='class-barra-lateral')
 
-                    ],
-                    style={'margin-top': '24px'}
+        ],  # sm=4,
+            lg=3),
+        dbc.Col([
+            dbc.Row([
+                dbc.Col(html.Div('blue', style={'background': 'blue'}), sm=4),
+                dbc.Col(html.Div('red', style={'background': 'red'}), sm=4),
+                dbc.Col(html.Div('yellow', style={'background': 'yellow'}), sm=4),
 
-                ),
-            ],
+            ]),
+            dbc.Row([
+                dbc.Col(html.Div('pink', style={'background': 'pink'}), sm=3),
+                dbc.Col(html.Div('green', style={'background': 'green'}), sm=9),
 
-            sm=10,
-        ),
+            ]),
+
+        ]  # , sm=12
+            , lg=9)
 
     ])
-], style={'padding': '15px'}
 
-)
+], fluid=True, style={'height': '100vh'})
 
 # @app.callback(Output('page-content', 'children'),
 #               [Input('url', 'pathname')])

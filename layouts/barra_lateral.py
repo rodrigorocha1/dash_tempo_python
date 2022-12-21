@@ -10,7 +10,7 @@ barra_lateral = dbc.Row([
         html.Img(src='../assets/localizacao.png', className='class-img-loc', id='botao_localizacao'),
         html.Img(src='../assets/calendar.png', className='class-img-cal', id='botao_calendar'),
 
-    ]),
+    ], md=2),
     dbc.Col(
         dbc.Nav(
             [
@@ -19,6 +19,7 @@ barra_lateral = dbc.Row([
                 dbc.NavLink('Localização', href='/layouts/localizacao', className='class-botao-layout'),
                 dbc.NavLink('Calendário', href='/layouts/calendario', className='class-botao-layout',)
             ], id='nav_buttons', vertical=True, pills=True),
-        width=8, style={'margin-top': '80px'}, ),
+        md=10,
+        style={'margin-top': '80px'}, ),
 
 ])

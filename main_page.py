@@ -24,25 +24,28 @@ app.layout = dbc.Container(children=[
         ],  md=2),
         dbc.Col([
             dbc.Row([
-                dbc.Col(html.Div('blue', style={'background': 'blue'}), md=4),
-                dbc.Col(html.Div('red', style={'background': 'red'}), md=4),
-                dbc.Col(html.Div('yellow', style={'background': 'yellow'}), md=4),
+                dbc.Col(html.Div('blue', className='class-card-city'), md=4), # style={'background': 'blue'}
+                dbc.Col(html.Div('red', className='class-card-sol'), md=4),
+                dbc.Col(html.Div('yellow', className='class-intervalo-tempo'), md=4),
 
             ]),
             dbc.Row([
-                dbc.Col(html.Div('pink', style={'background': 'pink'}), md=3),
-                dbc.Col(html.Div('green', style={'background': 'green'}), md=9),
+                dbc.Col(html.Div('pink', id='id_direcao_vento'), md=3),
+                dbc.Col(html.Div('green', id='coluna_mapa'), md=9),
 
             ]),
 
-        ],  md=10)
+        ],  md=10
+            # style={'padding' : '10px'}
+        )
 
     ])
 
 ], fluid=True, style={'height': '100vh'})
 
+
 # @app.callback(Output('page-content', 'children'),
-#               [Input('url', 'pathname')])
+#               [Input('nav_buttons', 'pathname')])
 # def carregar_pagina(pathname):
 #     if pathname == '/' or pathname == '/layouts/dashboard':
 #         return dashboard
@@ -52,7 +55,7 @@ app.layout = dbc.Container(children=[
 #         return localizacao
 #     if pathname == '/' or pathname == '/layouts/calendario':
 #         return calendario
-#
-#
+
+
 if __name__ == "__main__":
     app.run_server(port=8051, debug=True)

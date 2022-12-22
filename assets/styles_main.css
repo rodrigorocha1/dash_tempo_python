@@ -21,6 +21,8 @@ html {
     border-radius: 20px;
     backdrop-filter: blur(90px);
     border: 1px solid #FFFFFF;
+    /*padding: 30px;*/
+    /*text-align: right;*/
     background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     /*margin: 15px 20px 20px 10px;*/
 
@@ -52,44 +54,23 @@ html {
     color: #2AA312;
 }
 
-.class-img-dash {
-    width: 32px;
+.class-img{
+    width: 50px;
     height: 30px;
-    margin-top: 89px
 }
 
-.class-img-map {
-    width: 32px;
-    height: 30px;
-    margin-top: 5px;
-
-}
-
-.class-img-loc {
-    width: 32px;
-    height: 30px;
-    margin-top: 5px;
-
-}
-
-.class-img-cal {
-    width: 32px;
-    height: 30px;
-    margin-top: 5px;
-
-}
 
 .class-botao-layout {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    margin-top: 13px;
+
     width: 120px;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     background: none;
     border: none;
@@ -110,6 +91,21 @@ html {
     backdrop-filter: blur(90px);
     border: 1px solid #FFFFFF;
     background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-    margin: 24px 24px;
-    height: 90vh;
+    /*margin: 24px 24px;*/
+    /*height: 90vh;*/
+}
+
+
+@media only screen and (min-width: 997px) and (max-width: 1161px) {
+    .class-botao-layout {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 997px) {
+    .class-botao-layout {
+        font-size: 10px;
+    }
+
 }

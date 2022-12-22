@@ -1,54 +1,62 @@
 
-/*.class-card-city {*/
-/*    width: 400px;*/
-/*    height: 340px;*/
-/*    margin-left: 10px;*/
-/*    border-radius: 20px;*/
+.class-card-city {
+    /*width: 400px;*/
+    /*height: 340px;*/
+    /*margin-left: 10px;*/
+    border-radius: 20px;
 
-/*    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);*/
-/*    border: 1px solid #FFFFFF;*/
+    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #FFFFFF;
 
-/*    backdrop-filter: blur(90px);*/
-/*}*/
+    backdrop-filter: blur(90px);
+}
 
-/*.class-card-sol {*/
-/*    width: 400px;*/
-/*    height: 340px;*/
-/*    margin-left: 10px;*/
+.class-card-sol {
+    /*width: 400px;*/
+    /*height: 340px;*/
+    /*margin-left: 10px;*/
 
-/*    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);*/
-/*    border: 1px solid #FFFFFF;*/
-/*    border-radius: 20px;*/
-/*    backdrop-filter: blur(90px);*/
-/*}*/
+    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    backdrop-filter: blur(90px);
+}
 
-/*.class-intervalo-tempo {*/
-/*    height: 340px;*/
-/*    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);*/
-/*    border: 1px solid #FFFFFF;*/
-/*    border-radius: 20px;*/
-/*    margin-left: 10px;*/
-/*    backdrop-filter: blur(90px);*/
-/*}*/
+.class-intervalo-tempo {
 
-/*#id_direcao_vento {*/
-/*    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);*/
-/*    border: 1px solid #FFFFFF;*/
-/*    border-radius: 20px;*/
-/*    backdrop-filter: blur(90px);*/
-/*    height: 290px;*/
-/*    !*width: 400px;*!*/
-/*    !*margin-top: 24px;*!*/
-/*    margin-left: 10px;*/
+    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    /*margin-left: 10px;*/
+    /*height: 340px;*/
+    backdrop-filter: blur(90px);
+}
+
+#id_direcao_vento {
+    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    backdrop-filter: blur(90px);
+    /*height: 290px;*/
+    /*width: 400px;*/
+    /*margin-top: 24px;*/
+    /*margin-left: 10px;*/
+}
 
 
-/*}*/
+#coluna_mapa {
+    border: 1px solid #FFFFFF;
+    /*margin-left: 10px;*/
+    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+#menu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 11em;
+    height: 100%;
+}
 
 
-/*#coluna_mapa {*/
-/*    border: 1px solid #FFFFFF;*/
-/*    margin-left: 10px;*/
-/*    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);*/
-/*    backdrop-filter: blur(10px);*/
-/*    border-radius: 20px;*/
-/*}*/

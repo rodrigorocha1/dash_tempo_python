@@ -55,8 +55,15 @@
 #menu {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     width: 11em;
     height: 100%;
 }
 
-
+#cabecalho {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+}

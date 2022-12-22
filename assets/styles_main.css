@@ -21,7 +21,7 @@ html {
     border-radius: 20px;
     backdrop-filter: blur(90px);
     border: 1px solid #FFFFFF;
-    /*padding: 30px;*/
+    padding: 10px;
     /*text-align: right;*/
     background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     /*margin: 15px 20px 20px 10px;*/
@@ -44,14 +44,13 @@ html {
 
 #id_txt_tempo_agora {
     margin-left: 70px;
-    margin-top: -40px;
-    width: 145px;
+    /*margin-top: -40px;*/
+    /*width: 145px;*/
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 28px;
-    color: #2AA312;
 }
 
 .class-img{
@@ -66,7 +65,6 @@ html {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-
     width: 120px;
     display: flex;
     align-items: center;

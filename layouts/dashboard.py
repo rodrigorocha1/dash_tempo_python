@@ -6,33 +6,16 @@ import dash_bootstrap_components as dbc
 dashboard = html.Div(
     [
         dbc.Row([
-            dbc.Col(
-                dbc.Card([
+            dbc.Col(html.Div('blue', className='class-card-city'), md=4),  # style={'background': 'blue'}
+            dbc.Col(html.Div('red', className='class-card-sol'), md=4),
+            dbc.Col(html.Div('yellow', className='class-intervalo-tempo'), md=4),
 
-                ], className='class-card-city')
-            ),
-            dbc.Col(
-                dbc.Card([
-
-                ], className='class-card-sol')
-            ),
-            dbc.Col(
-                dbc.Card([
-
-                ], className='class-intervalo-tempo')
-
-            ),
         ]),
         dbc.Row([
-            dbc.Col(
-                dbc.Card([
-
-                ], id='id_direcao_vento', ) ,
-            ),
-            dbc.Col(
-                id='coluna_mapa',
-            ),
-
-        ]),
+            dbc.Col(html.Div('pink', id='id_direcao_vento'), md=3),
+            dbc.Col(html.Div('green', id='coluna_mapa'), md=9),
+        ])
     ]
 ),
+
+

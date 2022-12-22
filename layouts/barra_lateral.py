@@ -13,7 +13,8 @@ barra_lateral = html.Div([
     dbc.Row(
         [
             html.Img(src='../assets/map.png', className='class-img'),
-            dbc.Button('Mapa', href='/layouts/mapa', className='class-botao-layout')
+            dbc.Button('Mapa', href='/layouts/mapa', className='class-botao-layout'),
+
         ]
     ),
     dbc.Row(
@@ -28,4 +29,4 @@ barra_lateral = html.Div([
             dbc.Button('Calendário', href='/layouts/calendario', className='class-botao-layout')
         ]
     ),
-], id='menu',)
+], id='menu', )

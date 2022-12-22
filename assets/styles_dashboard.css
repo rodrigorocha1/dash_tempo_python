@@ -1,21 +1,18 @@
 
 .class-card-city {
     /*width: 400px;*/
-    /*height: 340px;*/
+    height: 391px;
     /*margin-left: 10px;*/
     border-radius: 20px;
-
     background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     border: 1px solid #FFFFFF;
-
     backdrop-filter: blur(90px);
 }
 
 .class-card-sol {
     /*width: 400px;*/
-    /*height: 340px;*/
+    height: 391px;
     /*margin-left: 10px;*/
-
     background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     border: 1px solid #FFFFFF;
     border-radius: 20px;
@@ -23,12 +20,11 @@
 }
 
 .class-intervalo-tempo {
-
     background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     border: 1px solid #FFFFFF;
     border-radius: 20px;
     /*margin-left: 10px;*/
-    /*height: 340px;*/
+    height: 391px;
     backdrop-filter: blur(90px);
 }
 
@@ -37,7 +33,7 @@
     border: 1px solid #FFFFFF;
     border-radius: 20px;
     backdrop-filter: blur(90px);
-    /*height: 290px;*/
+    height: 290px;
     /*width: 400px;*/
     /*margin-top: 24px;*/
     /*margin-left: 10px;*/
@@ -50,6 +46,7 @@
     background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(10px);
     border-radius: 20px;
+    height: 290px;
 }
 
 #menu {

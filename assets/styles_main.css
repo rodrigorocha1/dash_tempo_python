@@ -22,6 +22,7 @@ html {
     backdrop-filter: blur(90px);
     border: 1px solid #FFFFFF;
     padding: 10px;
+
     /*text-align: right;*/
     background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     /*margin: 15px 20px 20px 10px;*/

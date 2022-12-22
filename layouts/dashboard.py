@@ -14,7 +14,7 @@ dashboard = html.Div(
         dbc.Row([
             dbc.Col(html.Div('pink', id='id_direcao_vento'), md=3),
             dbc.Col(html.Div('green', id='coluna_mapa'), md=9),
-        ])
+        ], style={'margin-top': '10px'})
     ]
 ),
 

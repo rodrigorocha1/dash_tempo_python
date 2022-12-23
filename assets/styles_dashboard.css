@@ -1,11 +1,9 @@
 
 .class-card-city {
-    /*width: 400px;*/
     height: 391px;
-    /*margin-left: 10px;*/
     border-radius: 20px;
-    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     border: 1px solid #FFFFFF;
+    background: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(45, 77, 39, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(90px);
 }
 

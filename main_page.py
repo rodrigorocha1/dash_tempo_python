@@ -29,7 +29,7 @@ app.layout = dbc.Container(children=[
                     ),
                 )
             ], className='class-barra-lateral')
-        ], md=2),
+        ], md=2,style={'margin-top': '10px'}),
         dbc.Col([
             html.Div(id="page-content")
         ], md=10
@@ -39,7 +39,7 @@ app.layout = dbc.Container(children=[
 ], fluid=True, style={'height': '100vh'})
 
 
-@app.callback(Output('page-content', 'children'''),
+@app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
 def render_page_content(pathname):
     print(pathname)

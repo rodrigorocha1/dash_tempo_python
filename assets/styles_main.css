@@ -17,94 +17,94 @@ html {
 
 }
 
-.class-barra-lateral {
-    border-radius: 20px;
-    backdrop-filter: blur(90px);
-    border: 1px solid #FFFFFF;
-    padding: 10px;
+/*.class-barra-lateral {*/
+/*    border-radius: 20px;*/
+/*    backdrop-filter: blur(90px);*/
+/*    border: 1px solid #FFFFFF;*/
+/*    padding: 10px;*/
 
-    /*text-align: right;*/
-    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    /*margin: 15px 20px 20px 10px;*/
-
-
-}
-
-.class-linha-grande {
-    margin-left: 24px;
-    margin-top: 24px;
-}
-
-.class-img-barra-lateral {
-    width: 34px;
-    height: 42px;
-    margin-left: 25px;
-    margin-top: 45px;
-
-}
-
-#id_txt_tempo_agora {
-    margin-left: 70px;
-    /*margin-top: -40px;*/
-    /*width: 145px;*/
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-}
-
-.class-img{
-    width: 50px;
-    height: 30px;
-}
+/*    !*text-align: right;*!*/
+/*    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) !* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected *!;*/
+/*    !*margin: 15px 20px 20px 10px;*!*/
 
 
-.class-botao-layout {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    width: 120px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    background: none;
-    border: none;
-    color: #FFFFFF;
-    cursor: pointer;
-}
+/*}*/
 
-.class-botao-layout:hover {
-    background-color: yellowgreen;
-    transition: 0.5s;
-    opacity: 0.7;
+/*.class-linha-grande {*/
+/*    margin-left: 24px;*/
+/*    margin-top: 24px;*/
+/*}*/
 
-}
+/*.class-img-barra-lateral {*/
+/*    width: 34px;*/
+/*    height: 42px;*/
+/*    margin-left: 25px;*/
+/*    margin-top: 45px;*/
 
+/*}*/
 
-.class-coluna-2 {
-    border-radius: 20px;
-    backdrop-filter: blur(90px);
-    border: 1px solid #FFFFFF;
-    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-    /*margin: 24px 24px;*/
-    /*height: 90vh;*/
-}
+/*#id_txt_tempo_agora {*/
+/*    margin-left: 70px;*/
+/*    !*margin-top: -40px;*!*/
+/*    !*width: 145px;*!*/
+/*    font-family: 'Roboto', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    line-height: 28px;*/
+/*}*/
+
+/*.class-img{*/
+/*    width: 50px;*/
+/*    height: 30px;*/
+/*}*/
 
 
-@media only screen and (min-width: 997px) and (max-width: 1161px) {
-    .class-botao-layout {
-        font-size: 15px;
-    }
+/*.class-botao-layout {*/
+/*    font-family: 'Roboto', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    font-size: 20px;*/
+/*    !*line-height: 23px;*!*/
+/*    !*width: 120px;*!*/
+/*    display: flex;*/
+/*    !*align-items: center;*!*/
+/*    !*text-align: right;*!*/
+/*    !*!*justify-content: center;*!*!*/
+/*    !*background: none;*!*/
+/*    border: none;*/
+/*    color: #FFFFFF;*/
+/*    cursor: pointer;*/
+/*}*/
 
-}
+/*.class-botao-layout:hover {*/
+/*    background-color: yellowgreen;*/
+/*    transition: 0.5s;*/
+/*    opacity: 0.7;*/
 
-@media only screen and (min-width: 768px) and (max-width: 997px) {
-    .class-botao-layout {
-        font-size: 10px;
-    }
+/*}*/
 
-}
+
+/*.class-coluna-2 {*/
+/*    border-radius: 20px;*/
+/*    backdrop-filter: blur(90px);*/
+/*    border: 1px solid #FFFFFF;*/
+/*    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%);*/
+/*    !*margin: 24px 24px;*!*/
+/*    !*height: 90vh;*!*/
+/*}*/
+
+
+/*!*@media only screen and (min-width: 997px) and (max-width: 1161px) {*!*/
+/*!*    .class-botao-layout {*!*/
+/*!*        font-size: 15px;*!*/
+/*!*    }*!*/
+
+/*!*}*!*/
+
+/*!*@media only screen and (min-width: 768px) and (max-width: 997px) {*!*/
+/*!*    .class-botao-layout {*!*/
+/*!*        font-size: 10px;*!*/
+/*!*    }*!*/
+
+/*!*}*!*/

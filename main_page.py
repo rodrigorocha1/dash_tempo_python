@@ -18,9 +18,13 @@ app.layout = dbc.Container(
                             dbc.Col(html.P('qa', style={'margin-left': '50px'}), style={}, md=2, ),
                             dbc.Col([
                                 dbc.Row('1 linha',
-                                        style={'background': 'red', 'margin-left': '10px', 'margin-top': '10px'}),
+                                        style={'background': 'red', 'margin-left': '10px',
+                                               'margin-top':
+                                                   '10px', }),
                                 dbc.Row('2 linha',
-                                        style={'background': 'green', 'margin-left': '10px', 'margin-top': '10px'}),
+                                        style={'background': 'green',
+                                               'margin-left': '10px',
+                                               'margin-top': '10px'}),
                             ], md=10),
                         ]),
                         # dbc.Row([
@@ -32,10 +36,9 @@ app.layout = dbc.Container(
                     ])
                 ])
             ]),
-        ],
-        ),
-    ])
-
+        ]),
+    ]
+)
 
 # @app.callback(Output('page-content', 'children'),
 #               [Input('url', 'pathname')])

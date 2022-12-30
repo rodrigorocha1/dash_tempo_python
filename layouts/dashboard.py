@@ -8,7 +8,8 @@ tab_card = {
     'background-repeat': 'no-repeat',
     'height': '44vh',
     'background-size': '100% 100%',
-    'opacity': '0.4'
+    'opacity': '0.4',
+    'border-radius': '20px'
 
     # 'margin-top': '50px'
 
@@ -57,7 +58,7 @@ dashboard = [
     ],
         style={
 
-            'margin-left': '10px',
+            'margin-left': '5px',
             'margin-top': '10px',
 
         }),
@@ -76,7 +77,7 @@ dashboard = [
             , md=9, style={'border': '1px solid #FFFFFF', 'height': '49vh', }),
     ],
         style={
-            'margin-left': '10px',
+            'margin-left': '5px',
             'margin-top': '10px',
         }),
 

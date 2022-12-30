@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Roboto';
+    color: #FFFFFF;
 }
 
 html {
@@ -14,6 +15,30 @@ html {
 
 
 }
+
+#container-img {
+    background-image: url("https://f.vividscreen.info/soft/ffcc63f4169b1a1efef560378a794c7c/Maserati-Quattroporte-tall-l.jpg");
+    background-repeat: no-repeat;
+    height: 44vh;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+img {
+  opacity: 0.5;
+}
+#coluna1  {
+    color: yellowgreen;
+
+
+}
+
+
 
 .class-barra-lateral {
     border-radius: 20px;
@@ -76,6 +101,10 @@ html {
     border: none;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+#coluna1 p {
+    color: rgba(0, 0, 0, 100%);
 }
 
 .class-botao-layout:hover {

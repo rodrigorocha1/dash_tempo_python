@@ -18,17 +18,31 @@ tab_card = {
 dashboard = [
     dbc.Row([
         dbc.Col([
+
             dbc.Card([
+
                 dbc.CardBody([
                     dbc.Row([
-                        dbc.Col(style=tab_card),
+                        dbc.Col(
+
+                            [
+                                html.Div([
+
+                                    html.P('Margin - Negativa', style={'color': '#FFFFFF', 'opacity':'1'}),
+                                    html.P('Margin - Negativa', style={'color': '#FFFFFF', 'opacity':'1'}),
+                                    html.P('Margin - Negativa', style={'color': '#FFFFFF', 'opacity':'1'}),
+                                    html.P('Margin - Negativa', style={'color': '#FFFFFF', 'opacity':'1'}),
+                                ], style={'text-align': 'center'}, id='coluna1'),
+                            ],
+                            id='container-img'
+                        ),
+                        # html.Div([
+                        #     html.P('Margin - Negativa'),
+                        #     html.P('Margin - Negativa'),
+                        #     html.P('Margin - Negativa'),
+                        #     html.P('Margin - Negativa'),
+                        # ], style={'text-align': 'center', 'margin-top': '-320px'}),
                     ]),
-                    html.Div([
-                        html.P('Margin - Negativa'),
-                        html.P('Margin - Negativa'),
-                        html.P('Margin - Negativa'),
-                        html.P('Margin - Negativa'),
-                    ], style={'text-align': 'center', 'margin-top': '-320px'}),
 
                     # dbc.Row([
                     #     dbc.Col('green', style={'background': 'green'}),

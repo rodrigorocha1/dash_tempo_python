@@ -15,17 +15,17 @@ app.layout = dbc.Container(
                 dbc.Card([
                     dbc.CardBody([
                         dbc.Row([
-                            dbc.Col(html.P('qa', style={'margin-left': '50px'}), style={}, md=2, ),
-                            dbc.Col([
-                                dbc.Row('1 linha',
-                                        style={'background': 'red', 'margin-left': '10px',
-                                               'margin-top':
-                                                   '10px', }),
-                                dbc.Row('2 linha',
-                                        style={'background': 'green',
-                                               'margin-left': '10px',
-                                               'margin-top': '10px'}),
-                            ], md=10),
+                            dbc.Col(
+                                [
+                                    dcc.Location(id="url"),
+                                    barra_lateral
+                                ],
+                                className='class-barra-lateral',
+                                md=2),
+                            dbc.Col(
+                                html.Div(id="page-content")
+
+                            , md=10),
                         ]),
                         # dbc.Row([
                         #     dbc.Col('green', style={'background': 'green'}),
@@ -40,18 +40,19 @@ app.layout = dbc.Container(
     ]
 )
 
-# @app.callback(Output('page-content', 'children'),
-#               [Input('url', 'pathname')])
-# def render_page_content(pathname):
-#     print(pathname)
-#     if pathname == '/layouts/dashboard' or pathname == '/':
-#         return dashboard
-#     elif pathname == '/layouts/mapa':
-#         return mapa
-#     elif pathname == '/layouts/localizacao':
-#         return localizacao
-#     else:
-#         return calendario
+
+@app.callback(Output('page-content', 'children'),
+              [Input('url', 'pathname')])
+def render_page_content(pathname):
+    print(pathname)
+    if pathname == '/layouts/dashboard' or pathname == '/':
+        return dashboard
+    elif pathname == '/layouts/mapa':
+        return mapa
+    elif pathname == '/layouts/localizacao':
+        return localizacao
+    else:
+        return calendario
 
 
 if __name__ == "__main__":

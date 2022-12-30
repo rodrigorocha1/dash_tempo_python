@@ -9,7 +9,6 @@ html {
     background-color: black;
     background-image: radial-gradient(42.57% 62.43% at 18.61% 47.94%, rgba(39, 212, 10, 0.8) 6.56%, rgba(39, 212, 10, 0) 94.08%),
     radial-gradient(35.49% 47.56% at 69.31% 46.04%, rgba(209, 212, 15, 0.504) 21.15%, rgba(209, 212, 15, 0) 100%);
-
     background-repeat: no-repeat;
     height: 100vh;
     color: #FFFFFF;
@@ -17,18 +16,18 @@ html {
 
 }
 
-/*.class-barra-lateral {*/
-/*    border-radius: 20px;*/
-/*    backdrop-filter: blur(90px);*/
-/*    border: 1px solid #FFFFFF;*/
-/*    padding: 10px;*/
+.class-barra-lateral {
+    border-radius: 20px;
+    backdrop-filter: blur(90px);
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+}
 
-/*    !*text-align: right;*!*/
-/*    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) !* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected *!;*/
-/*    !*margin: 15px 20px 20px 10px;*!*/
-
-
-/*}*/
+#id_menu {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*.class-linha-grande {*/
 /*    margin-left: 24px;*/
@@ -54,35 +53,37 @@ html {
 /*    line-height: 28px;*/
 /*}*/
 
-/*.class-img{*/
-/*    width: 50px;*/
-/*    height: 30px;*/
-/*}*/
+.class-img {
+    width: 30px;
+    height: 30px;
+
+}
 
 
-/*.class-botao-layout {*/
-/*    font-family: 'Roboto', sans-serif;*/
-/*    font-style: normal;*/
-/*    font-weight: 400;*/
-/*    font-size: 20px;*/
-/*    !*line-height: 23px;*!*/
-/*    !*width: 120px;*!*/
-/*    display: flex;*/
-/*    !*align-items: center;*!*/
-/*    !*text-align: right;*!*/
-/*    !*!*justify-content: center;*!*!*/
-/*    !*background: none;*!*/
-/*    border: none;*/
-/*    color: #FFFFFF;*/
-/*    cursor: pointer;*/
-/*}*/
+.class-botao-layout {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 
-/*.class-botao-layout:hover {*/
-/*    background-color: yellowgreen;*/
-/*    transition: 0.5s;*/
-/*    opacity: 0.7;*/
+    /*line-height: 23px;*/
+    /*width: 120px;*/
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
 
-/*}*/
+.class-botao-layout:hover {
+    background-color: yellowgreen;
+    transition: 0.5s;
+    opacity: 0.7;
+
+}
 
 
 /*.class-coluna-2 {*/

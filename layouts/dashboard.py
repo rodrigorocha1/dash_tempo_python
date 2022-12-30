@@ -3,33 +3,14 @@ from dash.dependencies import Input, Output, State
 from app import *
 import dash_bootstrap_components as dbc
 
-dashboard = ''
-#     html.Div(
-#     [
-#         dbc.Row([
-#             dbc.Col(
-#                 dbc.Card(
-#                     [
-#
-#                     ],
-#                 )
-#                 , md=4, className='class-card-city'),  # style={'background': 'blue'}
-#             dbc.Col(
-#                 html.Div('red', className='class-card-sol')
-#                 , md=4),
-#             dbc.Col(
-#                 html.Div('yellow', className='class-intervalo-tempo')
-#                 , md=4),
-#
-#         ], style={'margin-top': '10px'}),
-#         dbc.Row([
-#             dbc.Col(
-#                 html.Div('pink',
-#                          id='id_direcao_vento'),
-#                 md=3),
-#             dbc.Col(html.Div('green',
-#                              id='coluna_mapa')
-#                     , md=9),
-#         ], style={'margin-top': '10px'})
-#     ]
-# ),
+dashboard = [
+    dbc.Row('1 linha',
+            style={'background': 'red', 'margin-left': '10px',
+                   'margin-top':
+                       '10px', }),
+    dbc.Row('2 linha',
+            style={'background': 'green',
+                   'margin-left': '10px',
+                   'margin-top': '10px'}),
+
+]

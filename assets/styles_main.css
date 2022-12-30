@@ -5,6 +5,28 @@
     color: #FFFFFF;
 }
 
+
+.demo_wrap h1 {
+    padding: 100px;
+    position: relative;
+    z-index: 2;
+    color: black;
+}
+.demo_wrap img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+}
+.demo_wrap {
+    position: relative;
+    overflow: hidden;
+    padding: 16px;
+    border: 1px dashed green;
+}
+
 html {
     background-color: black;
     background-image: radial-gradient(42.57% 62.43% at 18.61% 47.94%, rgba(39, 212, 10, 0.8) 6.56%, rgba(39, 212, 10, 0) 94.08%),
@@ -17,12 +39,18 @@ html {
 }
 
 #container-img {
-    background-image: url("https://f.vividscreen.info/soft/ffcc63f4169b1a1efef560378a794c7c/Maserati-Quattroporte-tall-l.jpg");
+    /*background-image: url("https://f.vividscreen.info/soft/ffcc63f4169b1a1efef560378a794c7c/Maserati-Quattroporte-tall-l.jpg");*/
     background-repeat: no-repeat;
     height: 44vh;
     background-size: 100% 100%;
-    opacity: 0.9;
     border-radius: 20px;
+}
+
+
+#container-img:after {
+
+    opacity: 0.4;
+
 }
 
 p {

@@ -18,42 +18,14 @@ tab_card = {
 dashboard = [
     dbc.Row([
         dbc.Col([
-
-            dbc.Card([
-
-                dbc.CardBody([
-                    dbc.Row([
-                        dbc.Col(
-
-                            [
-                                html.Div([
-
-                                    html.P('Margin - Negativa', style={'color': '#FFFFFF', 'opacity':'1'}),
-                                    html.P('Margin - Negativa', style={'color': '#FFFFFF', 'opacity':'1'}),
-                                    html.P('Margin - Negativa', style={'color': '#FFFFFF', 'opacity':'1'}),
-                                    html.P('Margin - Negativa', style={'color': '#FFFFFF', 'opacity':'1'}),
-                                ], style={'text-align': 'center'}, id='coluna1'),
-                            ],
-                            id='container-img'
-                        ),
-                        # html.Div([
-                        #     html.P('Margin - Negativa'),
-                        #     html.P('Margin - Negativa'),
-                        #     html.P('Margin - Negativa'),
-                        #     html.P('Margin - Negativa'),
-                        # ], style={'text-align': 'center', 'margin-top': '-320px'}),
-                    ]),
-
-                    # dbc.Row([
-                    #     dbc.Col('green', style={'background': 'green'}),
-                    # ]),
-                    # dbc.Row([
-                    #     dbc.Col('orange', style={'background': 'orange'}),
-                    # ])
-                ]),
-
-            ])
-        ], style={'border': '1px solid #FFFFFF', 'height': '45vh'},
+            html.Div(
+                [
+                    html.P('Hello World!', style={'font-weight': 'bold'}),
+                    html.P('Hello World!', style={ 'margin-top': '200px'}),
+                    html.Img(src='https://f.vividscreen.info/soft/ffcc63f4169b1a1efef560378a794c7c/Maserati-Quattroporte-tall-l.jpg')
+                ]
+            )
+        ], style={'border': '1px solid #FFFFFF', 'height': '45vh'}, className='demo_wrap',
             md=4),
         dbc.Col([
             html.Div([

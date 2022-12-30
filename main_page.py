@@ -23,9 +23,7 @@ app.layout = dbc.Container(
                                 className='class-barra-lateral',
                                 md=2),
                             dbc.Col(
-                                html.Div(id="page-content")
-
-                            , md=10),
+                                html.Div(id="page-content"), md=10),
                         ]),
                         # dbc.Row([
                         #     dbc.Col('green', style={'background': 'green'}),

@@ -7,6 +7,17 @@ barra_lateral = html.Div([
     dbc.Row(
         [
             dbc.Col(
+                html.Img(src='../assets/wind.png',
+                         className='class-img'), md=2),
+            dbc.Col(
+                html.P('Tempo Agora', id='id_txt_tempo_agora'),
+                md=10)
+        ]
+    ),
+    html.Div(className='linha-vertical'),
+    dbc.Row(
+        [
+            dbc.Col(
                 html.Img(src='../assets/dsh.png',
                          className='class-img'), md=2),
             dbc.Col(
@@ -55,24 +66,6 @@ barra_lateral = html.Div([
                            ),
                 md=10)
         ]
-    )
-], id='id_menu', )
-# dbc.Row(
-#     [
-#         html.Img(src='../assets/map.png', className='class-img'),
-#         dbc.Button('Mapa', href='/layouts/mapa', className='class-botao-layout'),
-#
-#     ]
-# ),
-# dbc.Row(
-#     [
-#         html.Img(src='../assets/localizacao.png', className='class-img'),
-#         dbc.Button('Localização', href='/layouts/localizacao', className='class-botao-layout')
-#     ]
-# ),
-# dbc.Row(
-#     [
-#         html.Img(src='../assets/dsh.png', className='class-img'),
-#         dbc.Button('Calendário', href='/layouts/calendario', className='class-botao-layout')
-#     ]
-# ),
+    ),
+    html.Div(className='linha-vertical'),
+], id='id_menu')

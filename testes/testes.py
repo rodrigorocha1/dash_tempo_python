@@ -1,31 +1,35 @@
-app.layout = dbc.Container(children=[
-    dbc.Row([
-        dbc.Col([
-            html.Div([
-                dbc.Card(
-                    dbc.CardBody(
-                        [
-                            html.Div(
-                                [
-                                    dbc.Col(html.Img(src='../assets/wind.png',
-                                                     className='class-img')),
-                                    dbc.Col(html.P('Tempo Agora',
-                                                   className='id_txt_tempo_agora',
-                                                   style={'color': '#2AA312'})),
+import dash
+from dash.dependencies import Input, Output
+import dash_core_components as dcc
+import dash_html_components as html
+import  dash_bootstrap_components as dbc
 
-                                ], id='cabecalho'
-                            ),
-                            dcc.Location(id="url"),
-                            barra_lateral
-                        ]
+from datetime import datetime as dt
+import plotly.graph_objs as go
+
+app = dash.Dash()
+app.layout = dbc.Card(
+    [
+        dbc.CardImg(
+            src="https://f.vividscreen.info/soft/ffcc63f4169b1a1efef560378a794c7c/Maserati-Quattroporte-tall-l.jpg",
+            top=True,
+            style={"opacity": 0.3},
+        ),
+        dbc.CardImgOverlay(
+            dbc.CardBody(
+                [
+                    html.H4("Card title", className="card-title"),
+                    html.P(
+                        "An example of using an image in the background of "
+                        "a card.",
+                        className="card-text",
                     ),
-                )
-            ], className='class-barra-lateral')
-        ], md=2,style={'margin-top': '10px'}),
-        dbc.Col([
-            html.Div(id="page-content")
-        ], md=10
-            # style={'padding' : '10px'}
-        )
-    ])
-], fluid=True, style={'height': '100vh'})
+                    dbc.Button("Go somewhere", color="primary"),
+                ],
+            ),
+        ),
+    ],
+    style={"width": "18rem"},
+)
+if __name__ == '__main__':
+    app.run_server(debug=True)

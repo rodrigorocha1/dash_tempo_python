@@ -20,11 +20,18 @@ dashboard = html.Div(
                             dbc.CardImgOverlay(
                                 dbc.CardBody(
                                     [
+                                        html.P('OI'),
                                         dbc.InputGroup(
                                             [
-                                                dbc.Input(' ', style={'height': '20px'}),
-                                                dbc.Button('?' , style={'height': '20px', 'font-size': '10px'})
-                                            ]
+                                                dbc.Input(placeholder='Digite a Cidade aqui',
+                                                          style={'height': '20px',
+                                                                 'background': 'transparent',
+                                                                 'border': '1px solid #FFFFFF',
+                                                                 'color': ' #FFFFFF',
+                                                                 'font-size': '10px'}),
+                                                dbc.Button('?', style={'height': '20px',
+                                                                       'font-size': '10px'})
+                                            ],
                                         ),
 
                                     ],

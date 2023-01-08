@@ -8,28 +8,24 @@ from datetime import datetime as dt
 import plotly.graph_objs as go
 
 app = dash.Dash()
-app.layout = dbc.Card(
-    [
-        dbc.CardImg(
-            src="https://f.vividscreen.info/soft/ffcc63f4169b1a1efef560378a794c7c/Maserati-Quattroporte-tall-l.jpg",
-            top=True,
-            style={"opacity": 0.3},
-        ),
-        dbc.CardImgOverlay(
-            dbc.CardBody(
-                [
-                    html.H4("Card title", className="card-title"),
-                    html.P(
-                        "An example of using an image in the background of "
-                        "a card.",
-                        className="card-text",
-                    ),
-                    dbc.Button("Go somewhere", color="primary"),
-                ],
-            ),
+app.layout =  dbc.NavbarSimple(
+    children=[
+        dbc.NavItem(dbc.NavLink("Page 1", href="#")),
+        dbc.DropdownMenu(
+            children=[
+                dbc.DropdownMenuItem("More pages", header=True),
+                dbc.DropdownMenuItem("Page 2", href="#"),
+                dbc.DropdownMenuItem("Page 3", href="#"),
+            ],
+            nav=True,
+            in_navbar=True,
+            label="More",
         ),
     ],
-    style={"width": "18rem"},
+    brand="NavbarSimple",
+    brand_href="#",
+    color="primary",
+    dark=True,
 )
 if __name__ == '__main__':
     app.run_server(debug=True)

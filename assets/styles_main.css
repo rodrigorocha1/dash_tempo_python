@@ -3,34 +3,15 @@
 * {
     font-family: 'Roboto';
     color: #FFFFFF;
+
 }
 
-
-.demo_wrap h1 {
-    padding: 100px;
-    position: relative;
-    z-index: 2;
-    color: black;
-}
-.demo_wrap img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    opacity: 30%;
-}
-.demo_wrap {
-    position: relative;
-    overflow: hidden;
-    padding: 16px;
-    border: 1px dashed green;
+.id_nav_links {
+    color: #FFFFFF;
 }
 
 html {
-    background-color: black;
-    background-image: radial-gradient(42.57% 62.43% at 18.61% 47.94%, rgba(39, 212, 10, 0.8) 6.56%, rgba(39, 212, 10, 0) 94.08%),
-    radial-gradient(35.49% 47.56% at 69.31% 46.04%, rgba(209, 212, 15, 0.504) 21.15%, rgba(209, 212, 15, 0) 100%);
+    font-family: Roboto, sans-serif;
     background-repeat: no-repeat;
     height: 100vh;
     color: #FFFFFF;
@@ -38,130 +19,3 @@ html {
 
 }
 
-#container-img {
-    /*background-image: url("https://f.vividscreen.info/soft/ffcc63f4169b1a1efef560378a794c7c/Maserati-Quattroporte-tall-l.jpg");*/
-    background-repeat: no-repeat;
-    height: 44vh;
-    background-size: 100% 100%;
-    border-radius: 20px;
-}
-
-
-#container-img:after {
-
-    opacity: 0.4;
-
-}
-
-p {
-    color: #FFFFFF;
-}
-
-img {
-  opacity: 0.5;
-}
-#coluna1  {
-    color: yellowgreen;
-
-
-}
-
-
-
-.class-barra-lateral {
-    border-radius: 20px;
-    backdrop-filter: blur(90px);
-    border: 1px solid #FFFFFF;
-    padding: 10px;
-    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-}
-
-#id_menu {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*.class-linha-grande {*/
-/*    margin-left: 24px;*/
-/*    margin-top: 24px;*/
-/*}*/
-
-/*.class-img-barra-lateral {*/
-/*    width: 34px;*/
-/*    height: 42px;*/
-/*    margin-left: 25px;*/
-/*    margin-top: 45px;*/
-
-/*}*/
-
-#id_txt_tempo_agora {
-    color: #2AA312;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-}
-
-.class-img {
-    width: 30px;
-    height: 30px;
-    align-items: center;
-}
-
-.linha-vertical {
-    border: 1px solid #2AA313;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.class-botao-layout {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    justify-content: center;
-    background: none;
-    border: none;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-#coluna1 p {
-    color: rgba(0, 0, 0, 100%);
-}
-
-.class-botao-layout:hover {
-    background-color: yellowgreen;
-    transition: 0.5s;
-    opacity: 0.7;
-}
-
-
-/*.class-coluna-2 {*/
-/*    border-radius: 20px;*/
-/*    backdrop-filter: blur(90px);*/
-/*    border: 1px solid #FFFFFF;*/
-/*    background-image: radial-gradient(110.08% 171.48% at -7.91% -10.08%, rgba(191, 216, 186, 0.4) 0%, rgba(255, 255, 255, 0) 100%);*/
-/*    !*margin: 24px 24px;*!*/
-/*    !*height: 90vh;*!*/
-/*}*/
-
-
-/*!*@media only screen and (min-width: 997px) and (max-width: 1161px) {*!*/
-/*!*    .class-botao-layout {*!*/
-/*!*        font-size: 15px;*!*/
-/*!*    }*!*/
-
-/*!*}*!*/
-
-/*!*@media only screen and (min-width: 768px) and (max-width: 997px) {*!*/
-/*!*    .class-botao-layout {*!*/
-/*!*        font-size: 10px;*!*/
-/*!*    }*!*/
-
-/*!*}*!*/

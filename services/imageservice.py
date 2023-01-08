@@ -1,5 +1,6 @@
 import requests
-
+from dotenv import load_dotenv
+load_dotenv()
 
 class ImageService:
     def __init__(self):
@@ -8,14 +9,15 @@ class ImageService:
     def get_img(self, query: str) -> str:
         querystring = {"q": query}
         headers = {
-            "X-RapidAPI-Key": "d4561e0951mshd9cc138de72db3dp18bf4ejsn26b4c39fccaf",
-            "X-RapidAPI-Host": "bing-image-search1.p.rapidapi.com"
+            "X-RapidAPI-Key": os.environ["X-RapidAPI-Key"],
+            "X-RapidAPI-Host": os.environ["X-RapidAPI-Host"]
         }
         data = requests.get(self.base_url, headers=headers, params=querystring)
         return data.json()['value'][6]['contentUrl']
 
 
 if __name__ == '__main__':
-    img = ImageService()
-    req = img.get_img('Ribeirão Preto')
-    print(req)
+    import os
+    print(os.environ["X-RapidAPI-Key"])
+    print(os.environ["X-RapidAPI-Host"])
+

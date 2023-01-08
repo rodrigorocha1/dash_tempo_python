@@ -2,6 +2,19 @@ from dash import html, callback_context
 from dash.dependencies import Input, Output, State
 from app import *
 import dash_bootstrap_components as dbc
+import datetime
+
+DIAS = [
+    'Segunda-feira',
+    'Terça-feira',
+    'Quarta-feira',
+    'Quinta-Feira',
+    'Sexta-feira',
+    'Sábado',
+    'Domingo'
+]
+
+dia_atual = DIAS[datetime.datetime.now().weekday()], ' , ', datetime.datetime.now().strftime("%d/%m/%Y")
 
 dashboard = html.Div(
     [
@@ -9,7 +22,6 @@ dashboard = html.Div(
             [
                 dbc.Col(
                     dbc.Card(
-
                         [
                             dbc.CardImg(
                                 src="../assets/wind.png",
@@ -20,7 +32,7 @@ dashboard = html.Div(
                             dbc.CardImgOverlay(
                                 dbc.CardBody(
                                     [
-                                        html.P('OI'),
+                                        html.P(dia_atual),
                                         dbc.InputGroup(
                                             [
                                                 dbc.Input(placeholder='Digite a Cidade aqui',

@@ -1,6 +1,8 @@
 import requests
 from dotenv import load_dotenv
+import os
 load_dotenv()
+
 
 class ImageService:
     def __init__(self):
@@ -17,7 +19,6 @@ class ImageService:
 
 
 if __name__ == '__main__':
-    import os
-    print(os.environ["X-RapidAPI-Key"])
-    print(os.environ["X-RapidAPI-Host"])
-
+    img = ImageService()
+    url_img = img.get_img('Ribeirão Preto')
+    print(url_img)

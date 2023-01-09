@@ -1,4 +1,4 @@
-from dash import html, callback_context
+from dash import html, callback_context, dcc
 from dash.dependencies import Input, Output, State
 from app import *
 import dash_bootstrap_components as dbc
@@ -24,15 +24,17 @@ dashboard = html.Div(
                     dbc.Card(
                         [
                             dbc.CardImg(
-                                src="../assets/wind.png",
                                 top=True,
+                                src='../assets/dsh.png',
                                 style={"opacity": 0.5,
                                        'height': '39vh'},
+                                id='id-image',
                             ),
                             dbc.CardImgOverlay(
                                 dbc.CardBody(
                                     [
                                         html.P(dia_atual),
+                                        html.Br(),
                                         dbc.InputGroup(
                                             [
                                                 dbc.Input(placeholder='Digite a Cidade aqui',
@@ -40,12 +42,13 @@ dashboard = html.Div(
                                                                  'background': 'transparent',
                                                                  'border': '1px solid #FFFFFF',
                                                                  'color': ' #FFFFFF',
-                                                                 'font-size': '10px'}),
+                                                                 'font-size': '10px'},
+                                                          id='id-cidade'),
                                                 dbc.Button('?', style={'height': '20px',
-                                                                       'font-size': '10px'})
+                                                                       'font-size': '10px'},
+                                                           id='id-botao-teste')
                                             ],
                                         ),
-
                                     ],
                                 ),
                             ),
@@ -78,3 +81,19 @@ dashboard = html.Div(
         ),
     ]
 )
+
+
+@app.callback(
+    Output('id-image', 'src'),
+    [Input('id-botao-teste', 'n_clicks')],
+    [State('id-cidade', 'value')])
+def update_image_src(*_):
+    ctx = callback_context
+    print('ctx.inputs', ctx.inputs)
+    print('ctx.states', ctx.states)
+    print('ctx.states_list', ctx.states_list[0].get('value'))
+    print('ctx.inputs', ctx.inputs)
+    path_img = ctx.states_list[0].get('value')
+    # path_img = f'/assets/{ctx.states_list[0].get("value")}'
+    # print(path_img)
+    return path_img

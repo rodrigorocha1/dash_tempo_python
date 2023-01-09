@@ -2,10 +2,11 @@ from dash import callback_context, dcc, html
 from dash.dependencies import Input, Output, State
 from app import *
 import dash_bootstrap_components as dbc
-from layouts.dashboard import dashboard
+# from layouts.dashboard import dashboard
 from layouts.mapa import mapa
 from layouts.localizacao import localizacao
 from layouts.calendario import calendario
+from testes.testes import dashboard
 
 search_bar = dbc.Row(
     [
@@ -14,7 +15,8 @@ search_bar = dbc.Row(
 
                 dbc.NavItem(
                     dbc.NavLink(' 📝 ' + 'Dashboard',
-                                href='/layouts/dashboard',
+                                # href='/layouts/dashboard',
+                                href='/testes/dashboard',
                                 className='class-link-dsb',
                                 style={'color': '#FFFFFF'},
                                 id='id-pg-dashboard'

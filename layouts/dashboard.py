@@ -3,6 +3,7 @@ from dash.dependencies import Input, Output, State
 from app import *
 import dash_bootstrap_components as dbc
 import datetime
+from services.imageservice import ImageService
 
 DIAS = [
     'Segunda-feira',
@@ -28,7 +29,7 @@ dashboard = html.Div(
                                 src='../assets/dsh.png',
                                 style={"opacity": 0.5,
                                        'height': '39vh'},
-                                id='id-image',
+                                id='id_image',
                             ),
                             dbc.CardImgOverlay(
                                 dbc.CardBody(
@@ -43,10 +44,10 @@ dashboard = html.Div(
                                                                  'border': '1px solid #FFFFFF',
                                                                  'color': ' #FFFFFF',
                                                                  'font-size': '10px'},
-                                                          id='id-cidade'),
+                                                          id='id_cidade'),
                                                 dbc.Button('?', style={'height': '20px',
                                                                        'font-size': '10px'},
-                                                           id='id-botao-teste')
+                                                           id='id_botao_teste')
                                             ],
                                         ),
                                     ],
@@ -84,16 +85,18 @@ dashboard = html.Div(
 
 
 @app.callback(
-    Output('id-image', 'src'),
-    [Input('id-botao-teste', 'n_clicks')],
-    [State('id-cidade', 'value')])
+    Output('id_image', 'src'),
+    [Input('id_botao_teste', 'n_clicks')],
+    [State('id_cidade', 'value')])
 def update_image_src(*_):
     ctx = callback_context
     print('ctx.inputs', ctx.inputs)
     print('ctx.states', ctx.states)
     print('ctx.states_list', ctx.states_list[0].get('value'))
     print('ctx.inputs', ctx.inputs)
-    path_img = ctx.states_list[0].get('value')
-    # path_img = f'/assets/{ctx.states_list[0].get("value")}'
+    text_img = ctx.states_list[0].get('value')
+    print(text_img)
+    img = ImageService()
+    print(img.get_img(text_img))
     # print(path_img)
-    return path_img
+    return text_img

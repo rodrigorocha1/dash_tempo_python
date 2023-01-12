@@ -1,5 +1,7 @@
 from dash import html, callback_context, dcc
 from dash.dependencies import Input, Output, State
+from dash.exceptions import PreventUpdate
+
 from app import *
 import dash_bootstrap_components as dbc
 import datetime
@@ -26,7 +28,6 @@ dashboard = html.Div(
                         [
                             dbc.CardImg(
                                 top=True,
-                                src='../assets/dsh.png',
                                 style={"opacity": 0.5,
                                        'height': '39vh'},
                                 id='id_image',
@@ -34,7 +35,9 @@ dashboard = html.Div(
                             dbc.CardImgOverlay(
                                 dbc.CardBody(
                                     [
-                                        html.P(dia_atual),
+
+                                        html.P(dia_atual, style={'position': 'absolute',
+                                                                 'top': '10px'}),
                                         html.Br(),
                                         dbc.InputGroup(
                                             [
@@ -45,16 +48,16 @@ dashboard = html.Div(
                                                                  'color': ' #FFFFFF',
                                                                  'font-size': '10px'},
                                                           id='id_cidade'),
-                                                dbc.Button('?', style={'height': '20px',
+                                                dbc.Button('🔍', style={'height': '20px',
                                                                        'font-size': '10px'},
+                                                           n_clicks=0,
                                                            id='id_botao_teste')
-                                            ],
-                                        ),
+                                            ], style={'top': '-15px'}
+                                        )
                                     ],
                                 ),
                             ),
                         ],
-
                     )
                     , style={'border': '1px solid #FFFFFF',
                              'height': '40vh', },
@@ -86,17 +89,16 @@ dashboard = html.Div(
 
 @app.callback(
     Output('id_image', 'src'),
-    [Input('id_botao_teste', 'n_clicks')],
-    [State('id_cidade', 'value')])
-def update_image_src(*_):
+    Input('id_botao_teste', 'n_clicks'),
+    State('id_cidade', 'value'))
+def update_image_src(n_clicks, id_cidade):
     ctx = callback_context
-    print('ctx.inputs', ctx.inputs)
-    print('ctx.states', ctx.states)
-    print('ctx.states_list', ctx.states_list[0].get('value'))
-    print('ctx.inputs', ctx.inputs)
-    text_img = ctx.states_list[0].get('value')
-    print(text_img)
-    img = ImageService()
-    print(img.get_img(text_img))
-    # print(path_img)
-    return text_img
+    if n_clicks == 0:
+        raise PreventUpdate
+    else:
+
+        text_img = ctx.states_list[0].get('value')
+
+        img = ImageService()
+        url_img = img.get_img(text_img)
+        return url_img

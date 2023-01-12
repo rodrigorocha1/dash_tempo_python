@@ -1,10 +1,11 @@
-from dash import html, callback_context, dcc
+import datetime
+
+import dash_bootstrap_components as dbc
+from dash import callback_context
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 
 from app import *
-import dash_bootstrap_components as dbc
-import datetime
 from services.imageservice import ImageService
 
 DIAS = [
@@ -35,10 +36,11 @@ dashboard = html.Div(
                             dbc.CardImgOverlay(
                                 dbc.CardBody(
                                     [
-
-                                        html.P(dia_atual, style={'position': 'absolute',
-                                                                 'top': '10px'}),
-                                        html.Br(),
+                                        html.P(dia_atual,
+                                               style={'position': 'absolute',
+                                                      'top': '10px',
+                                                      'text-align': 'center'}
+                                               ),
                                         dbc.InputGroup(
                                             [
                                                 dbc.Input(placeholder='Digite a Cidade aqui',
@@ -48,12 +50,26 @@ dashboard = html.Div(
                                                                  'color': ' #FFFFFF',
                                                                  'font-size': '10px'},
                                                           id='id_cidade'),
-                                                dbc.Button('🔍', style={'height': '20px',
-                                                                       'font-size': '10px'},
+                                                dbc.Button('🔍',
+                                                           style={'height': '20px',
+                                                                  'font-size': '10px'},
                                                            n_clicks=0,
                                                            id='id_botao_teste')
-                                            ], style={'top': '-15px'}
-                                        )
+                                            ], style={'top': '20px'}
+                                        ),
+                                        html.P('Nome da cidade',
+                                               style={'margin-top': '30px',
+                                                      'text-align': 'center'}),
+                                        html.P('Temperatura',
+                                               style={'margin-top': '5px',
+                                                      'text-align': 'center'}),
+                                        html.P('IMG',
+                                               style={'margin-top': '5px',
+                                                      'text-align': 'center'}),
+                                        dbc.Row([
+                                            dbc.Col(1),
+                                            dbc.Col(2),
+                                        ])
                                     ],
                                 ),
                             ),
